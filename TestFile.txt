@@ -4,4 +4,5 @@
             dbQuery.Formats.QuoteColumnAlias = true;
             dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
             return dbQuery;
+/* Testing B */
         }
