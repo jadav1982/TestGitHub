@@ -4,5 +4,13 @@
             dbQuery.Formats.QuoteColumnAlias = true;
             dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
             return dbQuery;
-/* Testing B */
+        }
+
+
+    protected override Query CreateQuery_B() {
+            DbQuery dbQuery = new DbQuery();
+            dbQuery.Formats.SetDefaultFormats(FormatType.MsSqlServer);
+            dbQuery.Formats.QuoteColumnAlias = true;
+            dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
+            return dbQuery;
         }
