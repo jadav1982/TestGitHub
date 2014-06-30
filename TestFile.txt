@@ -1,4 +1,4 @@
-    protected override Query CreateQuery() {
+    protected override Query CreateQuery1() {
             DbQuery dbQuery = new DbQuery();
             dbQuery.Formats.SetDefaultFormats(FormatType.MsSqlServer);
             dbQuery.Formats.QuoteColumnAlias = true;
