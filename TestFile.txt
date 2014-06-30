@@ -6,3 +6,12 @@
             return dbQuery;
 /* Testing */
         }
+
+    protected override Query CreateQuery_A() {
+            DbQuery dbQuery = new DbQuery();
+            dbQuery.Formats.SetDefaultFormats(FormatType.MsSqlServer);
+            dbQuery.Formats.QuoteColumnAlias = true;
+            dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
+            return dbQuery;
+/* Testing */
+        }
