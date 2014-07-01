@@ -2,6 +2,7 @@
             DbQuery dbQuery = new DbQuery();
             dbQuery.Formats.SetDefaultFormats(FormatType.MsSqlServer);
             dbQuery.Formats.QuoteColumnAlias = true;
+	    yyyyyy;
             dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
             return dbQuery;
         }
