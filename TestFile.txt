@@ -5,3 +5,10 @@
             dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
             return dbQuery;
         }
+ protected override Query CreateQuery() {
+            DbQuery dbQuery = new DbQuery();
+            dbQuery.Formats.SetDefaultFormats(FormatType.MsSqlServer);
+            dbQuery.Formats.QuoteColumnAlias = true;
+            dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
+            return dbQuery;
+        }
