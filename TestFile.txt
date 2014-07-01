@@ -1,11 +1,11 @@
-    protected override Query CreateQuery(int id,string x) {
-int localId;
-int y;
-localId=id;
-y=x;
-            DbQuery dbQuery = new DbQuery();
+protected override Query CreateQuery(int id,string x) 
+{
+int localId=id;
+		string y=x;
+            DbQuery dbQuery = new DbQuery(x);
             dbQuery.Formats.SetDefaultFormats(FormatType.MsSqlServer);
             dbQuery.Formats.QuoteColumnAlias = true;
             dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
             return dbQuery;
-        }
+	
+}
