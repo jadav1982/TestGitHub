@@ -1,8 +1,9 @@
-    protected override Query CreateQuery1() {
+    protected override Query CreateQuery2() {
             DbQuery dbQuery = new DbQuery();
             dbQuery.Formats.SetDefaultFormats(FormatType.MsSqlServer);
             dbQuery.Formats.QuoteColumnAlias = true;
 	    yyyyyy;
             dbQuery.Formats.UseColumnAliases = ColumnAliasesUsage.Always;
+	    yyyyyy;
             return dbQuery;
         }
