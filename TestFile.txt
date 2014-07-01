@@ -1,4 +1,8 @@
-    protected override Query CreateQuery() {
+    protected override Query CreateQuery(int id,string x) {
+int localId;
+int y;
+localId=id;
+y=x;
             DbQuery dbQuery = new DbQuery();
             dbQuery.Formats.SetDefaultFormats(FormatType.MsSqlServer);
             dbQuery.Formats.QuoteColumnAlias = true;
